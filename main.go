@@ -12,5 +12,5 @@ func main() {
 	ctrl := controllers.NewCtrl(uc)
 
 	router := routes.NewRouter(ctrl)
-	router.Router("8000")
+	router.Router("8080")
 }

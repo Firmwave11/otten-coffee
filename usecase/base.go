@@ -1,6 +1,8 @@
 package usecase
 
-import "context"
+import (
+	"context"
+)
 
 // uc struct with value interface Repository
 type uc struct {
@@ -8,7 +10,7 @@ type uc struct {
 
 // Usecases represent the Usecases contract
 type Usecases interface {
-	Tracking(ctx context.Context) (context.Context, int, error)
+	Tracking(ctx context.Context) (context.Context, interface{}, int, error)
 }
 
 /*NewUC will create an object that represent the Usecases interface (Usecases)
